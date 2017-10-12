@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="{{ "/assets/style.css" | relative_url }}">
+    <title>Titanium Open Source</title>
+</head>
+<body>
+    <main>
+        <div class="header-block row">
+            <div class="description-block col l10 push-l2 s12">
+                <span class="flow-text gold-text">{{ site.title }}</span>
+                <span class="flow-text white-text"><a href="mailto:commit@titanium.codes?Subject=Open Source">opensource</a>@<a href="https://titanium.codes" target="_blank">titanium.codes</a>:~/$</span>
+                <a href="https://titanium.codes" target="_blank" class="waves-effect waves-light btn"><i class="fa fa-globe left"></i>Website</a>
+                <a href="https://www.facebook.com/titanium.moldova/?fref=ts" target="_blank" class="waves-effect waves-light btn"><i class="fa fa-facebook left"></i>Facebook</a>
+                <a href="https://www.instagram.com/titanium.codes" target="_blank" class="waves-effect waves-light btn"><i class="fa fa-instagram left"></i>Instagram</a>
+                <a href="https://github.com/titanium-codes" target="_blank" class="waves-effect waves-light btn"><i class="fa fa-github-alt left"></i>GitHub</a>
+            </div>
+
+            <div class="logo-block col l2 pull-l10 s12">
+                <img src="{{ "/assets/logo.png" | relative_url }}" alt="">
+            </div>
+        </div>
+        <div class="body-block row">
+            <div class="col l10 offset-l2 s12">
+            {% assign repos = site.github.public_repositories | sort: 'stargazers_count' | reverse %}
+            {% for repo in repos %}
+                {% if repo.name != "titanium-codes.github.io" %}
+                <div class="feature-item">
+                    <a href="{{ repo.html_url }}" target="_blank">{{ repo.name }}</a>
+                    <i class="fa fa-star"> <span> {{ repo.stargazers_count }} </span></i>
+                    <span class="description">{{ repo.description }}</span>
+                </div>
+                {% endif %}
+            {% endfor %}
+            </div>
+        </div>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+</body>
+</html>

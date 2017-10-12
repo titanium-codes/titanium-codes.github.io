@@ -1,0 +1,136 @@
+body,
+html {
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    height: 100%;
+    background: #000;
+
+}
+
+.header-block {
+    padding: 30px;
+    border-bottom: 1px solid #9b8708;
+}
+
+.body-block {
+    padding: 30px 30px 0 30px;
+    margin-bottom: 0;
+}
+
+.header-block .logo-block img {
+    width: 140px;
+}
+
+.header-block .description-block span {
+    display: block;
+}
+
+.header-block .description-block .gold-text {
+    font-weight: bold;
+    letter-spacing: 3px;
+    font-size: 38px;
+    color: gold;
+    position: relative;
+}
+
+.header-block .description-block .gold-text:before {
+    content: '';
+    position: absolute;
+    left: -40px;
+    font-weight: 100;
+}
+
+.header-block .description-block .white-text {
+    font-weight: bold;
+    letter-spacing: 3px;
+    font-size: 18px;
+}
+
+.header-block .description-block .btn {
+    margin-top: 30px;
+    background: gold;
+    color: #000;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: capitalize;
+    font-weight: 900;
+}
+
+.feature-item {
+    word-break: break-word;
+    margin-bottom: 50px;
+}
+
+.feature-item span {
+    display: block;
+    margin-left: 45px;
+}
+
+.feature-item a {
+    cursor: pointer;
+    color: #ffffff;
+    text-decoration: underline;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
+    transition: .4s;
+}
+
+.feature-item a:hover {
+    color: gold;
+}
+
+.feature-item span,
+.feature-item a {
+    font-size: 18px;
+}
+
+
+.feature-item span {
+    color: #8c8c8c;
+}
+
+.feature-item i {
+    color: gold;
+    font-size: 18px;
+    margin-left: 15px;
+}
+
+
+.feature-item i span {
+    display: inline-block;
+    margin: 0;
+    color: gold;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/*Media query*/
+
+@media screen and (max-width: 992px) {
+    .header-block {
+        display: flex;
+        display: -webkit-flex;
+        display: -moz-flex;
+        flex-direction: column-reverse;
+    }
+
+    .description-block .gold-text {
+        line-height: normal;
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    html {
+        height: inherit;
+    }
+
+    .logo-block,
+    .description-block {
+        /*text-align: center;*/
+    }
+}
