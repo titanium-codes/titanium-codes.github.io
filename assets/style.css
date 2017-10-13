@@ -143,3 +143,18 @@ html {
         /*text-align: center;*/
     }
 }
+
+@media screen and (max-width: 544px) {
+    .header-block .description-block .white-text {
+        margin-top: 20px;
+        font-size: 15px;
+    }
+
+    .header-block .description-block a {
+        width: 100%;
+    }
+
+    .header-block .description-block i {
+        margin-right: 10px;
+    }
+}
