@@ -37,6 +37,7 @@ html {
     font-size: 38px;
     color: gold;
     position: relative;
+    line-height: 38px;
 }
 
 .header-block .description-block .gold-text:before {
@@ -64,6 +65,10 @@ html {
     font-family: 'Montserrat', sans-serif;
     text-transform: capitalize;
     font-weight: 900;
+}
+
+.header-block .description-block i {
+    margin-right: 10px;
 }
 
 .feature-item {
@@ -137,24 +142,16 @@ html {
     html {
         height: inherit;
     }
-
-    .logo-block,
-    .description-block {
-        /*text-align: center;*/
-    }
 }
 
 @media screen and (max-width: 544px) {
     .header-block .description-block .white-text {
         margin-top: 20px;
-        font-size: 15px;
+        font-size: 14px;
     }
 
     .header-block .description-block a {
         width: 100%;
     }
 
-    .header-block .description-block i {
-        margin-right: 10px;
-    }
 }
