@@ -48,6 +48,12 @@ html {
     font-size: 18px;
 }
 
+.header-block .description-block .white-text a:last-child,
+.header-block .description-block .white-text a:first-child {
+    color: #fff !important;
+    text-decoration: none;
+}
+
 .header-block .description-block .btn {
     margin-top: 30px;
     background: gold;
