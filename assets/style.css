@@ -24,7 +24,7 @@ html {
 }
 
 .header-block .logo-block img {
-    width: 140px;
+    width: 100%;
 }
 
 .header-block .description-block span {
