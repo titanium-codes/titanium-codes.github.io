@@ -52,9 +52,8 @@ html {
     font-size: 18px;
 }
 
-.header-block .description-block .white-text a:last-child,
-.header-block .description-block .white-text a:first-child {
-    color: #fff !important;
+.header-block .description-block .white-text a {
+    color: #fff;
     text-decoration: none;
 }
 
