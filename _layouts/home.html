@@ -32,6 +32,11 @@
         </div>
         <div class="body-block row">
             <div class="col l10 offset-l2 s12">
+                <div class="feature-item">
+                    <a href="https://github.com/tisuit" target="_blank">TiSuit</a>
+                    <i class="fa fa-star"></i>
+                    <span class="description">Titanium Suite for Slim Framework</span>
+                </div>
             {% assign repos = site.github.public_repositories | sort: 'stargazers_count' | reverse %}
             {% for repo in repos %}
                 {% if repo.name != "titanium-codes.github.io" %}
