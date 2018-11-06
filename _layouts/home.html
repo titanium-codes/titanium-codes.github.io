@@ -19,10 +19,9 @@
                 <span class="flow-text white-text">
                     <a href="mailto:commit@titanium.codes?Subject=Open Source">opensource</a>@<a href="https://titanium.codes" target="_blank">titanium.codes</a>:~$
                 </span>
-                <a href="https://stackshare.io/titanium/titanium" target="_blank" class="waves-effect waves-light btn tech-stack"><i class="fa fa-cubes"></i>Tech Stack</a>
                 <a href="https://titanium.codes" target="_blank" class="waves-effect waves-light btn"><i class="fa fa-globe"></i>Website</a>
-                <a href="https://www.facebook.com/titanium.moldova/?fref=ts" target="_blank" class="waves-effect waves-light btn"><i class="fa fa-facebook"></i>Facebook</a>
-                <a href="https://www.instagram.com/titanium.codes" target="_blank" class="waves-effect waves-light btn"><i class="fa fa-instagram"></i>Instagram</a>
+                <a href="https://www.facebook.com/titanium.codesmd" target="_blank" class="waves-effect waves-light btn"><i class="fa fa-facebook"></i>Facebook</a>
+                <a href="https://www.instagram.com/titanium.live" target="_blank" class="waves-effect waves-light btn"><i class="fa fa-instagram"></i>Instagram</a>
                 <a href="https://github.com/titanium-codes" target="_blank" class="waves-effect waves-light btn"><i class="fa fa-github-alt"></i>GitHub</a>
             </div>
 
@@ -39,7 +38,7 @@
                 </div>
             {% assign repos = site.github.public_repositories | sort: 'stargazers_count' | reverse %}
             {% for repo in repos %}
-                {% if repo.name != "titanium-codes.github.io" %}
+                {% if repo.name != "titanium-codes.github.io" and repo.name != "welcome.titanium.codes" and repo.name != "hero.md" and repo.name != "Blog" %}
                 <div class="feature-item">
                     <a href="{{ repo.html_url }}" target="_blank">{{ repo.name }}</a>
                     <i class="fa fa-star"> <span> {{ repo.stargazers_count }} </span></i>
